@@ -1,0 +1,18 @@
+@page {
+  margin:1in;
+}
+
+.print {
+  display:none;
+}
+
+.table {
+  display:grid;
+  grid-template-columns: 2.5in 2in;
+}
+
+.table p {
+  border-bottom:.5px solid black;
+  margin: 0;
+  padding: 0;
+}
