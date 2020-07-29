@@ -34,8 +34,9 @@ h2 {
 }
 
 h3 {
-  font-family: garamond, serif;
-  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1.75rem;
   margin: 0 0 1rem 0;
   color: firebrick;
 }
@@ -80,6 +81,23 @@ em {
   text-decoration: none;
   font-family: sans-serif;
   font-size:1.5rem;
+}
+
+/* schedule */
+
+#schedule {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-column-gap: 10%;
+}
+
+#schedule h2 {
+  grid-column: 1 / span 2;
+}
+
+#schedule p {
+  margin: 0 0 .5rem 1rem;
+  text-indent: -1rem;
 }
 
 /* exceptions */
