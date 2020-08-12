@@ -1,5 +1,7 @@
 body {
   background-color: cornsilk;
+  margin: 0 20vw 0 20vw;
+  padding: 0 5vw 0 5vw;
 }
 
 /* typography */
@@ -61,13 +63,6 @@ em {
   font-style: normal;
   font-weight: bold;
   color: firebrick;
-}
-
-@media only screen and (min-width: 700px) {
-  body {
-    margin: 0 20vw 0 20vw;
-    padding: 0 5vw 0 5vw;
-  }
 }
 
 /* menu design */
