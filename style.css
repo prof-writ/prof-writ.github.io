@@ -1,54 +1,44 @@
-body {
-  background-color: cornsilk;
-  margin: 0 20vw 0 20vw;
-  padding: 0 5vw 0 5vw;
-}
+/* cornsilk, firebrick */
 
 /* typography */
 
-h3, p, li, ul {
-  color:black;
+h2, p {
+  margin:0 0 1rem 0;
+  padding:0;
 }
 
-::selection {
-  background-color: firebrick;
-  color:cornsilk;
+.nobreak {
+  margin: 0;
+}
+
+.print {
+  display:none;
 }
 
 h1 {
   color: firebrick;
   font-family: sans-serif;
-  font-size: 4rem;
+  font-size: 2rem;
   font-variant: small-caps;
-  margin: 0;
   text-align: center;
   text-shadow: 1px 1px cornsilk, 2px 2px 1px firebrick;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
   color: firebrick;
-  font-size:2.5rem;
+  font-size:1.5rem;
   font-style: italic;
-  margin:1rem 0 1rem 0;
   border-bottom: 1px solid firebrick;
 }
 
 h3 {
-  font-family: sans-serif;
-  font-weight: normal;
-  font-size: 1.75rem;
-  margin: 0 0 1rem 0;
   color: firebrick;
-}
-
-p, li {
-  font-family: garamond, serif;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-p {
-  margin:0 0 1rem 0;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin:0 0 .25rem 0;
 }
 
 li {
@@ -65,7 +55,13 @@ em {
   color: firebrick;
 }
 
-/* menu design */
+/* page settings */
+
+body {
+  background-color: cornsilk;
+}
+
+/* menu */
 
 #menu {
   min-width:100%;
@@ -74,45 +70,94 @@ em {
   display:flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 #menu a, #menu div {
   color:cornsilk;
   text-decoration: none;
   font-family: sans-serif;
-  font-size:1.5rem;
+  font-size:1.1rem;
 }
 
-/* schedule */
-
-#schedule {
-  display: grid;
-  grid-template-columns: 45% 45%;
-  grid-column-gap: 10%;
+#submenu {
+  display: none;
+  position:absolute;
+  padding: 0 2rem;
+  margin: 0 -2rem;
+  background-color: firebrick;
 }
 
-#schedule h2 {
-  grid-column: 1 / span 2;
+#submenu a {
+  display:block;
+  color:cornsilk;
 }
 
-#schedule p {
-  margin: 0 0 .5rem 1rem;
-  text-indent: -1rem;
+#assignments:hover #submenu {
+  display: block;
 }
 
-/* exceptions */
-
-p.nobreak {
-  margin:0;
-}
+/* course info */
 
 #course-info {
-  padding-left: 2rem;
-  margin:1rem 0 0 0;
+  margin: 0 0 1rem 2rem;
 }
 
 #course-info p {
-  font-size:1rem;
-  margin: 0 0 0 3rem;
-  line-height: 1.25rem;
+  margin: 0;
+}
+
+/* table */
+
+.table {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 0 0 1rem 0;
+}
+
+.table p {
+  margin: 0 0 .25rem 0;
+  border-bottom: 1px solid firebrick;
+}
+
+/* media */
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font-size: 1.25rem;
+  }
+
+  body {
+    margin: 0 25%;
+  }
+
+  #menu a, #menu div {
+    font-size: 1.5rem;
+  }
+
+  #schedule {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+  }
+
+  #schedule h2 {
+    grid-column: 1 / span 2;
+  }
+
+  .table {
+    grid-template-columns: 50% 50%;
+  }
 }
