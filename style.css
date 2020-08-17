@@ -20,6 +20,10 @@ h2, p {
   display:none;
 }
 
+.print-spacer {
+  display: none;
+}
+
 h1 {
   color: firebrick;
   font-family: sans-serif;
