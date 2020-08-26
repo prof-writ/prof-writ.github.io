@@ -116,6 +116,12 @@ body {
   margin: 0;
 }
 
+/* documents page */
+
+#documents img {
+  display:none;
+}
+
 /* table */
 
 .table {
@@ -164,6 +170,31 @@ body {
 
   #schedule h2 {
     grid-column: 1 / span 2;
+  }
+
+  #documents {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #documents div {
+    border: 1px solid firebrick;
+    border-radius: 10%;
+    margin: 0 1rem;
+    overflow: hidden;
+    max-width: 30%;
+  }
+
+  #documents img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid firebrick;
+  }
+
+  #documents p {
+    text-align: center;
+    margin: .25rem 0;
   }
 
   .table {
